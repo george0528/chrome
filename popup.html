@@ -1,0 +1,19 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="component_alert danger close"></div>
+    <label for="">連投するメッセージ</label>
+    <p class="message_warn">＊文字は1文字以上200文字以内で入力してください</p>
+    <textarea autofocus required name="message" id="content_script_message" cols="20" rows="5"></textarea>
+    <label for="">連投回数</label>
+    <p class="times_warn">＊数字は1~99以内で指定してください</p>
+    <input required value="1" id="content_script_times" name="times" type="number">
+    <label for="">連投を2秒間隔空ける</label>
+    <input type="checkbox" name="delay" id="content_script_delay">
+    <button type="submit" id="content_script_submit_btn" class="component_btn primary">連投する</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
